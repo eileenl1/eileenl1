@@ -1,0 +1,266 @@
+/* main format of homepage*/
+main {
+    padding-left: 160px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 120px;
+    justify-items: center;
+    justify-content: center;
+}
+
+html, body {
+    margin: 100;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-weight: 200;
+  }
+
+/* menu bar, consistent across all pages*/
+/* left-right instead of top-down using flex*/
+.menubar {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title img {
+    padding-right: 15px;
+}
+
+.menuright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 720px;
+}
+
+.menuright img {
+    height: 20px;
+    padding: 15px;
+}
+
+/* interactive dropdown for the future*/
+.shopbutton {
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    background-color: white;
+    font-weight: bold;
+}
+
+/* homepage header img w caption*/
+.caption {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    position: absolute;
+    width: 400px;
+    word-wrap: break-word;
+    top: 430px;
+    left: 185px;
+}
+
+.rectangle {
+    z-index: 0;
+    position: absolute;
+    top: 435px;
+    left: 165px;
+}
+
+.container {
+    margin: 50px;
+    max-width: 1080px;
+    padding-left: 90px;
+}
+
+/* homepage pillow grid, nav to productbrowsing pg */
+.pillowtype {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    padding-top: 50px;
+    padding-left: 800px;
+}
+
+/* footer, consistent across all pages */
+.footer {
+    margin-top: 30px;
+    padding-left: 140px;
+    background-color: #EDEDED;
+}
+
+.footersection {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+/* productbrowsing page, filter bar on left */
+.filterbar {
+    font-family: "Open Sans";
+    padding-right: 240px;
+}
+
+/* distinguishing selection types in filter bar categories*/
+.selection {
+    padding-left: 30px;
+    line-height: 1.5;
+}
+
+.colorselection {
+    display: flex;
+    flex-direction: row;
+}
+
+/* sample dots next to color selection in filter bar */
+.dot1 {
+    height: 20px;
+    width: 20px;
+    background-color: #E7E7E7;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 9px;
+  }
+
+.dot2 {
+    height: 20px;
+    width: 20px;
+    background-color: #F5F2E2;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 9px;
+    }
+
+.dot3 {
+    height: 20px;
+    width: 20px;
+    background-color: #9CBACB;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 9px;
+    }
+
+.dot4 {
+    height: 20px;
+    width: 20px;
+    background-color: #EDDDF2;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 9px;
+    }
+
+.dots {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* productbrowsing page and product grid */
+#productstitle {
+    position: absolute;
+    left: 30.5%;
+}
+
+.products {
+    position: absolute;
+    right: 15%;
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 40px;
+    justify-items: center;
+    justify-content: center;
+}
+
+/* product description page */
+
+/* container for img+reviews and selection+checkout */
+.couchcontainer {
+    display: flex;
+    margin: 40px;
+    padding-left: 100px;
+}
+
+/* back to browsing button*/
+.backto {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+/* reviews (made these into buttons so clickable) */
+.reviews {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    padding-top: 50px;
+    width: 400px;
+    word-wrap: break-word;
+}
+
+.clickreview {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    border-color: black;
+    border: 2px solid black;
+}
+
+.readmore {
+    padding-left: 275px;
+}
+
+/* checkout information and button */
+.checkout {
+    margin-left: 200px;
+    padding-top: 35px;
+}
+
+.price {
+    padding-top: 20px;
+}
+
+.instock {
+    color: #4CAF50
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* specific to description page's color titles */
+.colors {
+    padding-top: 15px;
+}

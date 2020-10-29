@@ -264,3 +264,78 @@ html, body {
 .colors {
     padding-top: 15px;
 }
+
+.colbutton {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+}
+
+.matbutton {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+}
+
+
+.colbutton.selected {
+    background-color: moccasin;
+}
+
+.matbutton.selected {
+    background-color: moccasin;
+}
+
+/* Shopping Cart Page */
+.carttitle {
+    padding-left: 140px;
+}
+
+/*description for items in cart*/
+.cartdes {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.cartdesgray {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    word-wrap: break-word;
+    color: gray;
+}
+
+/*divs for each item in cart*/
+.cartbox {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, auto);
+    padding-left: 140px;
+}
+
+/*horizontal lines*/
+.hr {
+    width: 81%;
+}
+
+/*total price and misc prices for items in shopping cart*/
+.cartboxprice {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, auto);
+    padding-left: 1000px;
+}

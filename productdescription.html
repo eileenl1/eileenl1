@@ -7,6 +7,7 @@
 
 <body>
      <div class="container">
+
           <!--Menu Bar-->
           <header>
                <div class= "menubar">
@@ -18,6 +19,7 @@
                          <button type="button" class="shopbutton">SHOP</button>
                          <img src="searchbar.png" alt="search_bar"> 
                          <img src="cart.png" alt="shopping_cart">
+                         <p id="displayCartNum"> </p>
                     </div>
                </div>
           </header>
@@ -54,23 +56,23 @@
                         <span class="dot4"></span>
                     </div>
                     <div class="colors">
-                        <p>AFTERSCHOOL SPECIAL</p>
-                        <p>MORNING HAY</p>
-                        <p>COZY DENIM</p>
-                        <p>RAINY DAY</p>
+                         <button type="button" class="colbutton" onclick="updateDetails(event)" value="special">AFTERSCHOOL SPECIAL</button>
+                         <button type="button" class="colbutton" onclick="updateDetails(event)" value="hay">MORNING HAY</button>
+                         <button type="button" class="colbutton" onclick="updateDetails(event)" value="denim">COZY DENIM</button>
+                         <button type="button" class="colbutton" onclick="updateDetails(event)" value="rainy">RAINY DAY</button>
                     </div>
                 </div>
                <h4>MATERIAL</h4>
                <div class="selection">
-                    <p>HYPOALLERGENIC MEMORY FOAM</p>
-                    <p>DUCK DOWN</p>
+                    <button type="button" class="matbutton" onclick="updateDetails(event)" value="memoryfoam">HYPOALLERGENIC MEMORY FOAML</button>
+                    <button type="button" class="matbutton" onclick="updateDetails(event)" value="duckdown">DUCK DOWN</button>
                </div>
      <!--Checkout-->
                <div class="price">
                     <h3> Shipping Available (5-7 days)</h3>
                     <h3 class="instock">(In Stock)</h3>
                     <h3>Total Cost $15.00</h3>
-                    <button type="button" class="button">Add to Cart</button>
+                    <button type="button" class="button" id="cartButton">Add to Cart</button>
                </div>
           </div>
      </div>
@@ -104,5 +106,5 @@
           </div>
      </footer>
      </div>
-
+     <script src="function.js"></script>
 </body>

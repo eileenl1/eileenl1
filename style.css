@@ -1,4 +1,5 @@
 /* main format of homepage*/
+/* CSS validated */
 main {
     padding-left: 160px;
     display: grid;
@@ -10,7 +11,7 @@ main {
 }
 
 html, body {
-    margin: 100;
+    margin: 30px 75px;
     padding: 0;
     font-family: 'Open Sans';
     font-weight: 200;
@@ -21,6 +22,7 @@ html, body {
 .menubar {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .title {
@@ -37,7 +39,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 720px;
+    margin-left: 680px;
 }
 
 .menuright img {
@@ -79,9 +81,8 @@ html, body {
 }
 
 .container {
-    margin: 50px;
     max-width: 1080px;
-    padding-left: 90px;
+    margin-right: 100px;
 }
 
 /* homepage pillow grid, nav to productbrowsing pg */
@@ -324,12 +325,13 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(1, auto);
-    padding-left: 140px;
+    margin-left: 70px;
+    grid-gap: 60px;
 }
 
 /*horizontal lines*/
 .hr {
-    width: 81%;
+    width: 300%;
 }
 
 /*total price and misc prices for items in shopping cart*/
@@ -337,5 +339,16 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(1, auto);
-    padding-left: 1000px;
+    padding-left: 760px;
+}
+
+.removebutton {
+    background-color: salmon; 
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
 }

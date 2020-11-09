@@ -4,10 +4,10 @@
 
 <header>
      <link href="style.css" type="text/css" rel="stylesheet">
-     <script src="function.js"></script>
+     <script src="cart_javascript.js"></script>
 </header>
 
-<body>
+<body onLoad="fillCart(); calculatePrice()";>
      <div class="container">
 
           <!--Menu Bar-->
@@ -30,56 +30,28 @@
      </div>
 
      <div class="carttitle">
-          <h4><u>SHOPPING CART (2)</u></h4>
+          <h4><u>SHOPPING CART</u></h4>
      </div>
 
      <div class="cartbox">
-          <a href="productbrowsing.html">
-               <img src="basiccouch2.png" alt="couch pillow" style="width:250px;height:250px;">
-          </a>
-          <div>
-               <p class="cartdesgray">Color: </p>
-               <p class="cartdes">Morning Hay </p>
-               <p class="cartdesgray">Material:</p>
-               <p class="cartdes">Duck Down</p>
+          <!--create structure outline for each product in shopping cart page-->
+          <!--outline replicates for each item in cart array-->
+          <div id="cartContent">
           </div>
-          <p class="cartdes">Qty: 1</p>
-          <p class="cartdes">$15.00</p>
      </div>
-
-     <hr class="hr">
-     </hr>
-
-     <div class="cartbox">
-          <a href="productbrowsing.html">
-               <img src="beanpillow2.png" alt="bed pillow" style="width:250px;height:250px;">
-          </a>
-          <div>
-               <p class="cartdesgray">Color:</p>
-               <p class="cartdes">Rainy Day</p>
-               <p class="cartdesgray">Material:</p>
-               <p class="cartdes">Duck Down</p>
-          </div>
-          <p class="cartdes">Qty: 1</p>
-          <p class="cartdes">$35.00</p>
-     </div>
-
-     <hr class="hr">
-     </hr>
 
      <div class="cartboxprice">
           <div>
                <p class="cartdes">Subtotal</p>
                <p class="cartdes">Shipping</p>
-               <p class="cartdes">Estimated Tax</p>
                <p class="cartdes"><b>Estimated Total</b></p>
           </div>
      
           <div>
-               <p class="cartdes">$50.00</p>
+               <!--change total based on items in cart-->
+               <p class="cartdes" id="subtotalprice"></p>
                <p class="cartdes">$6.00</p>
-               <p class="cartdes">$3.57</p>
-               <p class="cartdes"><b>$59.57</b></p>
+               <p class="cartdes" id="totalprice"><b></b></p>
           </div>
      </div>
      
